@@ -40,12 +40,14 @@ def detectingWords():
                             cv2.FONT_HERSHEY_COMPLEX, 0.4, (50, 50, 255), 1)
 
 
+# save text to file
 def saveText(strList):
     print(strList)
     with open('text.txt', 'w', encoding='utf-8') as f:
         f.writelines(strList)
 
 
+# save links to file
 def searchAndSaveLinks(strList):
     searchLinks = []
 
